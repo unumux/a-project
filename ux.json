@@ -1,0 +1,24 @@
+{
+    "scss": {
+        "src": [
+            "styles/**/*.scss",
+            "node_modules/@unumux/components/_*.scss",
+            "node_modules/@unumux/components/@(components|base-elements|utilities)/_*.scss",
+            "node_modules/@unumux/components/@(components|base-elements|utilities)/**/_*.scss",
+            "node_modules/@unumux/theme-enterprise-cyano/_*.scss",            
+            "node_modules/@unumux/theme-enterprise-cyano/**/_*.scss"
+        ],
+        "dest": "styles"
+    },
+    "js": {
+        "src": "scripts/**/*.js",
+        "dest": "scripts",
+        "main": "scripts/site.js"
+    },
+    "watch": [
+        "index.html"
+    ],
+    "server": true,
+    "compileJs": true,
+    "proxy": false
+}
