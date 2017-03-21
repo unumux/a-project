@@ -28,10 +28,12 @@
     <!-- Page Header Component -->
     <header class="willow-page-header" role="banner">
         <div class="willow-page-header__branding">
-            <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="http://fillmurray.com/150/150" alt=""></a>
+            <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="http://fillmurray.com/250/150" alt=""></a>
         </div>
-        <a href="#" class="willow-page-header__content-open">menu <span class="willow-icon--menu"></span></a>
-        <a href="#" class="willow-page-header__content-close">close <span class="willow-icon--menu-close"></span></a>
+        <div class="willow-page-header__content-controls">
+            <a href="#" class="willow-page-header__content-open">menu <span class="willow-icon--menu"></span></a>
+            <a href="#" class="willow-page-header__content-close">close <span class="willow-icon--menu-close"></span></a>
+        </div>
         <div class="willow-page-header__content">
             <div class="willow-page-header__navigation">
                 <nav class="willow-primary-nav" role="navigation" aria-label="Primary Navigation">
@@ -129,11 +131,6 @@
                 <li>list item 4</li>
                 <li>list item 5</li>
             </ol>
-            <hr>
-            <h2>menu</h2>
-            <menu>
-                <li>menu text</li>
-            </menu>
             <hr>
             <h2>nav</h2>
             <nav>nav text</nav>
@@ -402,11 +399,23 @@
 
     <!-- Page Footer Component -->
     <footer class="willow-page-footer" role="contentinfo">
-        <div class="willow-styling-context">
-            <p>Stay connected on our latest releases.</p>
-            <input type="email">
-            <button class="willow-button">Keep Me Posted</button>
+        <div class="willow-page-footer__branding">
+            <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="http://fillmurray.com/100/100" alt=""></a>
         </div>
+        <div class="willow-page-footer__navigation">
+            <nav class="willow-footer-nav" role="navigation" aria-label="Footer Navigation">
+                <!-- Heading Text Hidden by Default - Required for Accessibility-->
+                <h1 class="willow-footer-nav__heading">Footer Navigation</h1>
+                <ul class="willow-footer-nav__list">
+                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 1</a></li>
+                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 2</a></li>
+                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 3</a></li>
+                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 4</a></li>
+                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 5</a></li>
+                </ul>
+            </nav>
+        </div>
+        <small class="willow-page-footer__copyright">© 2017 Colonial Life & Accident Insurance Company Colonial Life & Accident Insurance Company is a subsidiary of Unum Group.</small>
     </footer>
     <script src="scripts/site.min.js"></script>
     <script>
