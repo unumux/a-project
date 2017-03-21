@@ -30,8 +30,8 @@
         <div class="willow-page-header__branding">
             <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="http://fillmurray.com/150/150" alt=""></a>
         </div>
-        <a href="" class="willow-page-header__content-open">menu</a>
-        <a href="" class="willow-page-header__content-close">close</a>
+        <a href="#" class="willow-page-header__content-open">menu <span class="willow-icon--menu"></span></a>
+        <a href="#" class="willow-page-header__content-close">close <span class="willow-icon--menu-close"></span></a>
         <div class="willow-page-header__content">
             <div class="willow-page-header__navigation">
                 <nav class="willow-primary-nav" role="navigation" aria-label="Primary Navigation">
@@ -410,25 +410,17 @@
     </footer>
     <script src="scripts/site.min.js"></script>
     <script>
-        // var toggle = document.querySelector(".willow-primary-nav__toggle-link");
-        // var toggleIcon = document.querySelector(".willow-primary-nav__toggle-link .willow-icon--menu");
-        // var list = document.querySelector(".willow-primary-nav__list");
+        var header = document.querySelector(".willow-page-header");
+        var open = document.querySelector(".willow-page-header__content-open");
+        var close = document.querySelector(".willow-page-header__content-close");
 
-        // toggle.addEventListener("click", function(e) {
-        //     var listOpen = list.getAttribute("data-primary-nav-open");
-        //     e.preventDefault();
-            
-        //     if(listOpen != null) {
-        //         if(listOpen === "true") {
-        //             list.setAttribute("data-primary-nav-open", "false");
-        //         } else {
-        //             list.setAttribute("data-primary-nav-open", "true");
-        //         }
-        //     } else {
-        //         list.setAttribute("data-primary-nav-open", "true");
-        //     }
+        open.addEventListener("click", function(e) {
+            header.setAttribute("data-content-open", "true");    
+        });
 
-        // });
+        close.addEventListener("click", function(e) {
+            header.setAttribute("data-content-open", "false");
+        });
     </script>
 </body>
 
