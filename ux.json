@@ -16,7 +16,8 @@
         "main": "scripts/site.js"
     },
     "watch": [
-        "index.html"
+        "index.html",
+        "components.html"
     ],
     "server": true,
     "compileJs": true,
