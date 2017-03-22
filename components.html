@@ -76,7 +76,7 @@
             </ul>
         </section>
 
-        <button class="willow-button" id="openDialog">Show Dialog</button>
+        <button class="willow-button" onclick="openDialog()">Show Dialog</button>
         <section class="willow-dialog" role="dialog">
             <h1 class="willow-dialog__heading">Heading Text</h1>
             <div class="willow-dialog__content">
@@ -93,12 +93,12 @@
                 </section>
             </div>
             <ul class="willow-dialog__actions">
-                <li class="willow-dialog__action"><button class="willow-button">add later</button></li>
-                <li class="willow-dialog__action"><button class="willow-button--positive">add now</button></li>
+                <li class="willow-dialog__action"><button class="willow-button" onclick="closeDialog()">add later</button></li>
+                <li class="willow-dialog__action"><button class="willow-button--positive" onclick="closeDialog()">add now</button></li>
             </ul>
         </section>
 
-        <button class="willow-button" id="openModal">Show Modal</button>
+        <button class="willow-button" onclick="openModal()">Show Modal</button>
         <section class="willow-modal" role="alertdialog">
             <h1 class="willow-modal__heading">Modal</h1>
             <div class="willow-modal__content">
@@ -115,7 +115,7 @@
                 </section>
             </div>
             <ul class="willow-modal__actions">
-                <li class="willow-modal__action"><button class="willow-button--negative">delete my account</button></li>
+                <li class="willow-modal__action"><button class="willow-button--negative" onclick="closeModal()">delete my account</button></li>
             </ul>
         </section>
 
@@ -210,25 +210,30 @@
             header.setAttribute("data-content-open", "false");
         });
 
-        document.querySelector("#openDialog").on("click", function(e) {
-            console.log("dialog close true");
-            document.querySelector(".willow-dialog").setAttribute("data-dialog-close", "true");
-        });
 
-        document.querySelector("#openModal").on("click", function(e) {
-            console.log("dialog close false");
-            document.querySelector(".willow-modal").setAttribute("data-modal-close", "false");
-        });
+        function openDialog() {
+            console.log("dialog");
+            var dialog = document.querySelector(".willow-dialog");
+            dialog.setAttribute("data-dialog-close", "false");
+        }
+        
+        function closeDialog() {
+            console.log("dialog");
+            var dialog = document.querySelector(".willow-dialog");
+            dialog.setAttribute("data-dialog-close", "true");
+        }
 
-        document.querySelector(".willow-dialog__action button").on("click", function(e) {
-            console.log("modal close true");
-            document.querySelector(".willow-dialog").setAttribute("data-dialog-close", "true");
-        })
-
-        document.querySelector(".willow-modal__action button").on("click", function(e) {
-            console.log("modal close false");
-            document.querySelector(".willow-modal").setAttribute("data-modal-close", "true");
-        })
+        function openModal() {
+            console.log("modal");
+            var modal = document.querySelector(".willow-modal");
+            modal.setAttribute("data-modal-close", "false");
+        }
+        
+        function closeModal() {
+            console.log("modal");
+            var modal = document.querySelector(".willow-modal");
+            modal.setAttribute("data-modal-close", "true");
+        }
     </script>
 </body>
 
