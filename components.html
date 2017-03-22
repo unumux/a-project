@@ -8,194 +8,196 @@
 </head>
 
 <body>
-    <!-- Global Alert Component -->
-    <section class="willow-global-alert" role="alert">
-        <button class="willow-global-alert__close">close<span class="willow-icon--close-small-inverse"></span></button>
-        <h1 class="willow-global-alert__heading">Important Information</h1>
-        <div class="willow-global-alert__content">
-            <div class="styling-context">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate optio commodi doloribus, sed eos mollitia
-                    vitae nobis, obcaecati et. Ipsum atque mollitia est et quos unde dolores facere neque consequatur?</p>
+    <div class="willow-page">
+        <!-- Global Alert Component -->
+        <section class="willow-global-alert" role="alert">
+            <button class="willow-global-alert__close">close<span class="willow-icon--close-small-inverse"></span></button>
+            <h1 class="willow-global-alert__heading">Important Information</h1>
+            <div class="willow-global-alert__content">
+                <div class="styling-context">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate optio commodi doloribus, sed eos mollitia
+                        vitae nobis, obcaecati et. Ipsum atque mollitia est et quos unde dolores facere neque consequatur?</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skip Navigation Component -->
-    <div class="willow-skip-nav">
-        <a href="#main" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
-    </div>
+        <!-- Skip Navigation Component -->
+        <div class="willow-skip-nav">
+            <a href="#main" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
+        </div>
 
-    <!-- Page Header Component -->
-    <header class="willow-page-header" role="banner">
-        <div class="willow-page-header__branding">
-            <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="images/logos/unum/logo_unum_reverse.svg" alt=""></a>
-        </div>
-        <div class="willow-page-header__content-controls">
-            <a href="#" class="willow-page-header__content-open">menu<span class="willow-icon--menu"></span></a>
-            <a href="#" class="willow-page-header__content-close">close<span class="willow-icon--menu-close"></span></a>
-        </div>
-        <div class="willow-page-header__content">
-            <div class="willow-page-header__navigation">
-                <nav class="willow-primary-nav" role="navigation" aria-label="Primary Navigation">
+        <!-- Page Header Component -->
+        <header class="willow-page-header" role="banner">
+            <div class="willow-page-header__branding">
+                <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="images/logos/unum/logo_unum_reverse.svg" alt=""></a>
+            </div>
+            <div class="willow-page-header__content-controls">
+                <a href="#" class="willow-page-header__content-open">menu<span class="willow-icon--menu"></span></a>
+                <a href="#" class="willow-page-header__content-close">close<span class="willow-icon--menu-close"></span></a>
+            </div>
+            <div class="willow-page-header__content">
+                <div class="willow-page-header__navigation">
+                    <nav class="willow-primary-nav" role="navigation" aria-label="Primary Navigation">
+                        <!-- Heading Text Hidden by Default - Required for Accessibility-->
+                        <h1 class="willow-primary-nav__heading">Primary Navigation</h1>
+                        <ul class="willow-primary-nav__list">
+                            <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="/" aria-label="">Elements</a></li>
+                            <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="#2" aria-label="">Menu Item 2</a></li>
+                            <li class="willow-primary-nav__item"><a class="willow-primary-nav__link--active" href="#3" aria-label="">Menu Item 3</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="willow-page-header__site-context">
+                <nav class="willow-breadcrumbs" role="navigation" aria-label="Breadcrumb Navigation">
                     <!-- Heading Text Hidden by Default - Required for Accessibility-->
-                    <h1 class="willow-primary-nav__heading">Primary Navigation</h1>
-                    <ul class="willow-primary-nav__list">
-                        <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="/" aria-label="">Elements</a></li>
-                        <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="#2" aria-label="">Menu Item 2</a></li>
-                        <li class="willow-primary-nav__item"><a class="willow-primary-nav__link--active" href="#3" aria-label="">Menu Item 3</a></li>
+                    <h1 class="willow-breadcrumbs__heading">You are here:</h1>
+                    <ol class="willow-breadcrumbs__list">
+                        <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 1</a></li>
+                        <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 2</a></li>
+                        <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 3</a></li>
+                        <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 4</a></li>
+                        <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 5</a></li>
+                        <li class="willow-breadcrumbs__item--active">Current Item</li>
+                    </ol>
+                </nav>
+            </div>
+        </header>
+
+        <main class="willow-page-content" id="main" role="main">
+            <section class="willow-banner" role="region">
+                <h1 class="willow-banner__heading">Banner Heading</h1>
+                <div class="willow-banner__content">
+                    <div class="willow-styling-context">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim cumque nihil quisquam tempore voluptatum hic laudantium incidunt, eaque molestias. Tenetur est sapiente sit adipisci, accusamus modi asperiores at id a!</p>
+                    </div>
+                </div>
+                <ul class="willow-banner__actions">
+                    <li class="banner__action"><button class="willow-button--primary">Call To Action</button></li>
+                </ul>
+            </section>
+
+            <button class="willow-button" onclick="openDialog()">Show Dialog</button>
+            <section class="willow-dialog" role="dialog">
+                <h1 class="willow-dialog__heading">Heading Text</h1>
+                <div class="willow-dialog__content">
+                    <div class="willow-styling-context">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dignissimos doloremque aliquam quidem maxime voluptates porro quos ex dolor aperiam ab laboriosam error, expedita, quia eaque, iure assumenda nemo fugiat.</p>
+                    </div>
+                    <section class="willow-alert--negative" role="alert">
+                        <h1 class="willow-alert__heading">Heading Text</h1>
+                        <div class="willow-alert__content">
+                            <div class="willow-styling-context">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <ul class="willow-dialog__actions">
+                    <li class="willow-dialog__action"><button class="willow-button" onclick="closeDialog()">add later</button></li>
+                    <li class="willow-dialog__action"><button class="willow-button--positive" onclick="closeDialog()">add now</button></li>
+                </ul>
+            </section>
+
+            <button class="willow-button" onclick="openModal()">Show Modal</button>
+            <section class="willow-modal" role="alertdialog">
+                <h1 class="willow-modal__heading">Modal</h1>
+                <div class="willow-modal__content">
+                    <div class="willow-styling-context">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dignissimos doloremque aliquam quidem maxime voluptates porro quos ex dolor aperiam ab laboriosam error, expedita, quia eaque, iure assumenda nemo fugiat.</p>
+                    </div>
+                    <section class="willow-alert--negative" role="alert">
+                        <h1 class="willow-alert__heading">Heading Text</h1>
+                        <div class="willow-alert__content">
+                            <div class="willow-styling-context">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <ul class="willow-modal__actions">
+                    <li class="willow-modal__action"><button class="willow-button--negative" onclick="closeModal()">delete my account</button></li>
+                </ul>
+            </section>
+
+            <div class="willow-grid">
+                <div class="willow-grid__item">
+                    <div class="willow-styling-context">
+                        <h1>Heading</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nulla voluptates in laborum odio vero labore cupiditate maxime, deleniti tempore nostrum ullam aspernatur veritatis? Unde nobis voluptas cumque deleniti reiciendis.</p>
+                    </div>
+                </div>
+                <div class="willow-grid__item">
+                    <div class="willow-styling-context">
+                        <h1>Heading</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nulla voluptates in laborum odio vero labore cupiditate maxime, deleniti tempore nostrum ullam aspernatur veritatis? Unde nobis voluptas cumque deleniti reiciendis.</p>
+                    </div>
+                </div>
+                <div class="willow-grid__item">
+                    <div class="willow-styling-context">
+                        <h1>Heading</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nulla voluptates in laborum odio vero labore cupiditate maxime, deleniti tempore nostrum ullam aspernatur veritatis? Unde nobis voluptas cumque deleniti reiciendis.</p>
+                    </div>
+                </div>
+                <div class="willow-grid__item">
+                    <div class="willow-styling-context">
+                        <h1>Heading</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nulla voluptates in laborum odio vero labore cupiditate maxime, deleniti tempore nostrum ullam aspernatur veritatis? Unde nobis voluptas cumque deleniti reiciendis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="willow-summary" role="region">
+                <h1 class="willow-summary__heading">Summary Heading</h1>
+                <div class="willow-summary__content">
+                    <div class="willow-grid">
+                        <div class="willow-grid__item">
+                            <div class="willow-styling-context">
+                                <h1>Heading</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nulla voluptates in laborum odio vero labore cupiditate maxime, deleniti tempore nostrum ullam aspernatur veritatis? Unde nobis voluptas cumque deleniti reiciendis.</p>
+                            </div>
+                        </div>
+                        <div class="willow-grid__item">
+                            <div class="willow-styling-context">
+                                <h1>Heading</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nulla voluptates in laborum odio vero labore cupiditate maxime, deleniti tempore nostrum ullam aspernatur veritatis? Unde nobis voluptas cumque deleniti reiciendis.</p>
+                            </div>
+                        </div>
+                        <div class="willow-grid__item">
+                            <div class="willow-styling-context">
+                                <h1>Heading</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nulla voluptates in laborum odio vero labore cupiditate maxime, deleniti tempore nostrum ullam aspernatur veritatis? Unde nobis voluptas cumque deleniti reiciendis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="willow-summary__actions">
+                    <li class="willow-summary__action"><a href="#">More Articles</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Page Footer Component -->
+        <footer class="willow-page-footer" role="contentinfo">
+            <div class="willow-page-footer__branding">
+                <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="images/logos/unum/logo_unum_reverse.svg" alt=""></a>
+            </div>
+            <div class="willow-page-footer__navigation">
+                <nav class="willow-footer-nav" role="navigation" aria-label="Footer Navigation">
+                    <!-- Heading Text Hidden by Default - Required for Accessibility-->
+                    <h1 class="willow-footer-nav__heading">Footer Navigation</h1>
+                    <ul class="willow-footer-nav__list">
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 1</a></li>
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 2</a></li>
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 3</a></li>
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 4</a></li>
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 5</a></li>
                     </ul>
                 </nav>
             </div>
-        </div>
-        <div class="willow-page-header__site-context">
-            <nav class="willow-breadcrumbs" role="navigation" aria-label="Breadcrumb Navigation">
-                <!-- Heading Text Hidden by Default - Required for Accessibility-->
-                <h1 class="willow-breadcrumbs__heading">You are here:</h1>
-                <ol class="willow-breadcrumbs__list">
-                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 1</a></li>
-                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 2</a></li>
-                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 3</a></li>
-                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 4</a></li>
-                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 5</a></li>
-                    <li class="willow-breadcrumbs__item--active">Current Item</li>
-                </ol>
-            </nav>
-        </div>
-    </header>
-
-    <main class="willow-page-content" id="main" role="main">
-        <section class="willow-banner" role="region">
-            <h1 class="willow-banner__heading">Banner Heading</h1>
-            <div class="willow-banner__content">
-                <div class="willow-styling-context">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim cumque nihil quisquam tempore voluptatum hic laudantium incidunt, eaque molestias. Tenetur est sapiente sit adipisci, accusamus modi asperiores at id a!</p>
-                </div>
-            </div>
-            <ul class="willow-banner__actions">
-                <li class="banner__action"><button class="willow-button--primary">Call To Action</button></li>
-            </ul>
-        </section>
-
-        <button class="willow-button" onclick="openDialog()">Show Dialog</button>
-        <section class="willow-dialog" role="dialog">
-            <h1 class="willow-dialog__heading">Heading Text</h1>
-            <div class="willow-dialog__content">
-                <div class="willow-styling-context">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dignissimos doloremque aliquam quidem maxime voluptates porro quos ex dolor aperiam ab laboriosam error, expedita, quia eaque, iure assumenda nemo fugiat.</p>
-                </div>
-                <section class="willow-alert--negative" role="alert">
-                    <h1 class="willow-alert__heading">Heading Text</h1>
-                    <div class="willow-alert__content">
-                        <div class="willow-styling-context">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <ul class="willow-dialog__actions">
-                <li class="willow-dialog__action"><button class="willow-button" onclick="closeDialog()">add later</button></li>
-                <li class="willow-dialog__action"><button class="willow-button--positive" onclick="closeDialog()">add now</button></li>
-            </ul>
-        </section>
-
-        <button class="willow-button" onclick="openModal()">Show Modal</button>
-        <section class="willow-modal" role="alertdialog">
-            <h1 class="willow-modal__heading">Modal</h1>
-            <div class="willow-modal__content">
-                <div class="willow-styling-context">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dignissimos doloremque aliquam quidem maxime voluptates porro quos ex dolor aperiam ab laboriosam error, expedita, quia eaque, iure assumenda nemo fugiat.</p>
-                </div>
-                <section class="willow-alert--negative" role="alert">
-                    <h1 class="willow-alert__heading">Heading Text</h1>
-                    <div class="willow-alert__content">
-                        <div class="willow-styling-context">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <ul class="willow-modal__actions">
-                <li class="willow-modal__action"><button class="willow-button--negative" onclick="closeModal()">delete my account</button></li>
-            </ul>
-        </section>
-
-        <div class="willow-grid">
-            <div class="willow-grid__item">
-                <div class="willow-styling-context">
-                    <h1>Heading</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nulla voluptates in laborum odio vero labore cupiditate maxime, deleniti tempore nostrum ullam aspernatur veritatis? Unde nobis voluptas cumque deleniti reiciendis.</p>
-                </div>
-            </div>
-            <div class="willow-grid__item">
-                <div class="willow-styling-context">
-                    <h1>Heading</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nulla voluptates in laborum odio vero labore cupiditate maxime, deleniti tempore nostrum ullam aspernatur veritatis? Unde nobis voluptas cumque deleniti reiciendis.</p>
-                </div>
-            </div>
-            <div class="willow-grid__item">
-                <div class="willow-styling-context">
-                    <h1>Heading</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nulla voluptates in laborum odio vero labore cupiditate maxime, deleniti tempore nostrum ullam aspernatur veritatis? Unde nobis voluptas cumque deleniti reiciendis.</p>
-                </div>
-            </div>
-            <div class="willow-grid__item">
-                <div class="willow-styling-context">
-                    <h1>Heading</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nulla voluptates in laborum odio vero labore cupiditate maxime, deleniti tempore nostrum ullam aspernatur veritatis? Unde nobis voluptas cumque deleniti reiciendis.</p>
-                </div>
-            </div>
-        </div>
-
-        <section class="willow-summary" role="region">
-            <h1 class="willow-summary__heading">Summary Heading</h1>
-            <div class="willow-summary__content">
-                <div class="willow-grid">
-                    <div class="willow-grid__item">
-                        <div class="willow-styling-context">
-                            <h1>Heading</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nulla voluptates in laborum odio vero labore cupiditate maxime, deleniti tempore nostrum ullam aspernatur veritatis? Unde nobis voluptas cumque deleniti reiciendis.</p>
-                        </div>
-                    </div>
-                    <div class="willow-grid__item">
-                        <div class="willow-styling-context">
-                            <h1>Heading</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nulla voluptates in laborum odio vero labore cupiditate maxime, deleniti tempore nostrum ullam aspernatur veritatis? Unde nobis voluptas cumque deleniti reiciendis.</p>
-                        </div>
-                    </div>
-                    <div class="willow-grid__item">
-                        <div class="willow-styling-context">
-                            <h1>Heading</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nulla voluptates in laborum odio vero labore cupiditate maxime, deleniti tempore nostrum ullam aspernatur veritatis? Unde nobis voluptas cumque deleniti reiciendis.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="willow-summary__actions">
-                <li class="willow-summary__action"><a href="#">More Articles</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <!-- Page Footer Component -->
-    <footer class="willow-page-footer" role="contentinfo">
-        <div class="willow-page-footer__branding">
-            <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="images/logos/unum/logo_unum_reverse.svg" alt=""></a>
-        </div>
-        <div class="willow-page-footer__navigation">
-            <nav class="willow-footer-nav" role="navigation" aria-label="Footer Navigation">
-                <!-- Heading Text Hidden by Default - Required for Accessibility-->
-                <h1 class="willow-footer-nav__heading">Footer Navigation</h1>
-                <ul class="willow-footer-nav__list">
-                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 1</a></li>
-                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 2</a></li>
-                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 3</a></li>
-                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 4</a></li>
-                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 5</a></li>
-                </ul>
-            </nav>
-        </div>
-        <small class="willow-page-footer__copyright">© 2017 Colonial Life & Accident Insurance Company Colonial Life & Accident Insurance Company is a subsidiary of Unum Group.</small>
-    </footer>
+            <small class="willow-page-footer__copyright">© 2017 Colonial Life & Accident Insurance Company Colonial Life & Accident Insurance Company is a subsidiary of Unum Group.</small>
+        </footer>
+    </div>
     <script src="scripts/site.min.js"></script>
     <script>
         var header = document.querySelector(".willow-page-header");
