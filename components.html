@@ -76,6 +76,7 @@
             </ul>
         </section>
 
+        <button class="willow-button" id="openDialog">Show Dialog</button>
         <section class="willow-dialog" role="dialog">
             <h1 class="willow-dialog__heading">Heading Text</h1>
             <div class="willow-dialog__content">
@@ -92,8 +93,29 @@
                 </section>
             </div>
             <ul class="willow-dialog__actions">
-                <li class="willow-dialog__action"><button class="willow-button--positive">yes</button></li>
-                <li class="willow-dialog__action"><button class="willow-button--negative">no</button></li>
+                <li class="willow-dialog__action"><button class="willow-button">add later</button></li>
+                <li class="willow-dialog__action"><button class="willow-button--positive">add now</button></li>
+            </ul>
+        </section>
+
+        <button class="willow-button" id="openModal">Show Modal</button>
+        <section class="willow-modal" role="alertdialog">
+            <h1 class="willow-modal__heading">Modal</h1>
+            <div class="willow-modal__content">
+                <div class="willow-styling-context">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dignissimos doloremque aliquam quidem maxime voluptates porro quos ex dolor aperiam ab laboriosam error, expedita, quia eaque, iure assumenda nemo fugiat.</p>
+                </div>
+                <section class="willow-alert--negative" role="alert">
+                    <h1 class="willow-alert__heading">Heading Text</h1>
+                    <div class="willow-alert__content">
+                        <div class="willow-styling-context">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <ul class="willow-modal__actions">
+                <li class="willow-modal__action"><button class="willow-button--negative">delete my account</button></li>
             </ul>
         </section>
 
@@ -187,6 +209,26 @@
         close.addEventListener("click", function(e) {
             header.setAttribute("data-content-open", "false");
         });
+
+        document.querySelector("#openDialog").on("click", function(e) {
+            console.log("dialog close true");
+            document.querySelector(".willow-dialog").setAttribute("data-dialog-close", "true");
+        });
+
+        document.querySelector("#openModal").on("click", function(e) {
+            console.log("dialog close false");
+            document.querySelector(".willow-modal").setAttribute("data-modal-close", "false");
+        });
+
+        document.querySelector(".willow-dialog__action button").on("click", function(e) {
+            console.log("modal close true");
+            document.querySelector(".willow-dialog").setAttribute("data-dialog-close", "true");
+        })
+
+        document.querySelector(".willow-modal__action button").on("click", function(e) {
+            console.log("modal close false");
+            document.querySelector(".willow-modal").setAttribute("data-modal-close", "true");
+        })
     </script>
 </body>
 
