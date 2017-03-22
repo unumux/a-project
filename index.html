@@ -8,391 +8,393 @@
 </head>
 
 <body>
-    <!-- Global Alert Component -->
-    <section class="willow-global-alert" role="alert">
-        <button class="willow-global-alert__close">close<span class="willow-icon--close-small-inverse"></span></button>
-        <h1 class="willow-global-alert__heading">Important Information</h1>
-        <div class="willow-global-alert__content">
-            <div class="styling-context">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate optio commodi doloribus, sed eos mollitia
-                    vitae nobis, obcaecati et. Ipsum atque mollitia est et quos unde dolores facere neque consequatur?</p>
+    <div class="willow-page">
+        <!-- Global Alert Component -->
+        <section class="willow-global-alert" role="alert">
+            <button class="willow-global-alert__close">close<span class="willow-icon--close-small-inverse"></span></button>
+            <h1 class="willow-global-alert__heading">Important Information</h1>
+            <div class="willow-global-alert__content">
+                <div class="styling-context">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate optio commodi doloribus, sed eos mollitia
+                        vitae nobis, obcaecati et. Ipsum atque mollitia est et quos unde dolores facere neque consequatur?</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skip Navigation Component -->
-    <div class="willow-skip-nav">
-        <a href="#main" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
-    </div>
+        <!-- Skip Navigation Component -->
+        <div class="willow-skip-nav">
+            <a href="#main" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
+        </div>
 
-    <!-- Page Header Component -->
-    <header class="willow-page-header" role="banner">
-        <div class="willow-page-header__branding">
-            <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="images/logos/colonial-life/logo-one-color.svg" alt=""></a>
-        </div>
-        <div class="willow-page-header__content-controls">
-            <a href="#" class="willow-page-header__content-open">menu<span class="willow-icon--menu"></span></a>
-            <a href="#" class="willow-page-header__content-close">close<span class="willow-icon--menu-close"></span></a>
-        </div>
-        <div class="willow-page-header__content">
-            <div class="willow-page-header__navigation">
-                <nav class="willow-primary-nav" role="navigation" aria-label="Primary Navigation">
+        <!-- Page Header Component -->
+        <header class="willow-page-header" role="banner">
+            <div class="willow-page-header__branding">
+                <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="images/logos/colonial-life/logo-one-color.svg" alt=""></a>
+            </div>
+            <div class="willow-page-header__content-controls">
+                <a href="#" class="willow-page-header__content-open">menu<span class="willow-icon--menu"></span></a>
+                <a href="#" class="willow-page-header__content-close">close<span class="willow-icon--menu-close"></span></a>
+            </div>
+            <div class="willow-page-header__content">
+                <div class="willow-page-header__navigation">
+                    <nav class="willow-primary-nav" role="navigation" aria-label="Primary Navigation">
+                        <!-- Heading Text Hidden by Default - Required for Accessibility-->
+                        <h1 class="willow-primary-nav__heading">Primary Navigation</h1>
+                        <ul class="willow-primary-nav__list">
+                            <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="/components.html" aria-label="">Component Examples</a></li>
+                            <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="#2" aria-label="">Menu Item 2</a></li>
+                            <li class="willow-primary-nav__item"><a class="willow-primary-nav__link--active" href="#3" aria-label="">Menu Item 3</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="willow-page-header__site-context">
+                <nav class="willow-breadcrumbs" role="navigation" aria-label="Breadcrumb Navigation">
                     <!-- Heading Text Hidden by Default - Required for Accessibility-->
-                    <h1 class="willow-primary-nav__heading">Primary Navigation</h1>
-                    <ul class="willow-primary-nav__list">
-                        <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="/components.html" aria-label="">Component Examples</a></li>
-                        <li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="#2" aria-label="">Menu Item 2</a></li>
-                        <li class="willow-primary-nav__item"><a class="willow-primary-nav__link--active" href="#3" aria-label="">Menu Item 3</a></li>
+                    <h1 class="willow-breadcrumbs__heading">You are here:</h1>
+                    <ol class="willow-breadcrumbs__list">
+                        <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 1</a></li>
+                        <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 2</a></li>
+                        <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 3</a></li>
+                        <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 4</a></li>
+                        <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 5</a></li>
+                        <li class="willow-breadcrumbs__item--active">Current Item</li>
+                    </ol>
+                </nav>
+            </div>
+        </header>
+
+        <main class="willow-page-content" id="main" role="main">
+            <!-- Styling Context Component -->
+            <div class="willow-styling-context">
+                <h1>Base Elements:tests</h1>
+                <hr>
+                <h2>Headings</h2>
+                <div>
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                </div>
+                <hr>
+                <h2>header</h2>
+                <header>header text</header>
+                <hr>
+                <h2>main</h2>
+                <main>main text</main>
+                <hr>
+                <h2>footer</h2>
+                <footer>footer text</footer>
+                <hr>
+                <h2>lists</h2>
+                <ul>
+                    <li><a href="#">link-1</a></li>
+                    <li><a href="#">link-2</a></li>
+                    <li><a href="#">link-3</a></li>
+                    <li><a href="#">link-4</a></li>
+                    <li><a href="#">link-5</a></li>
+                    <li><a href="#">link-6</a></li>
+                    <li><a href="#">link-7</a></li>
+                    <li><a href="#">link-8</a></li>
+                    <li><a href="#">link-9</a></li>
+                    <li><a href="#">link-10</a></li>
+                </ul>
+                <ol>
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                    <li>list item 4</li>
+                    <li>list item 5</li>
+                </ol>
+                <hr>
+                <h2>nav</h2>
+                <nav>nav text</nav>
+                <hr>
+                <h2>section</h2>
+                <section>section text</section>
+                <hr>
+                <h2>article</h2>
+                <article>article text</article>
+                <hr>
+                <h2>aside</h2>
+                <aside>aside text</aside>
+                <hr>
+                <h2><code>summary</code> with <code>details</code></h2>
+                <details>
+                    <summary>summary text</summary>
+                    details text
+                </details>
+                <hr>
+                <h2><code>a</code></h2>
+                <a href="#">dummy anchor</a>
+                <hr>
+                <h2><code>b</code>, <code>strong</code></h2>
+                <h3>should have bolder font-weight</h3>
+                <div>
+                    <b>b is for bold</b>
+                    <br>
+                    <strong>strong is for strong</strong>
+                </div>
+                <hr>
+                <h2><code>i</code>, <code>em</code></h2>
+                <div>
+                    <i>italicized words here</i>
+                    <br>
+                    <em>emphasized words here</em>
+                </div>
+                <hr>
+                <h2><code>abbr[title]</code></h2>
+                <abbr title="abbreviation">abbr</abbr>
+                <hr>
+                <h2><code>s</code> and <code>delete</code></h2>
+                <s>strikethrough on text</s>
+                <br>
+                <del>deleted text should be deleted,</del>
+                <hr>
+                <h2><code>ins</code></h2>
+                <ins>insert text here</ins>
+                <hr>
+                <h2><code>time</code></h2>
+                <time>20:00</time>
+                <hr>
+                <h2><code>blockquote</code></h2>
+                <p>This is an important quote from someone:<blockquote>BLOCKQUOTE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas cupiditate, molestiae voluptatem, eligendi optio.</blockquote></p>
+                <hr>
+                <h2><code>q</code></h2>
+                <p>Lorem ipsum dolor sit amet, <q>QUOTE culpa dolores in consectetur ipsam</q> accusantium quis ut quam eveniet.</p>
+                <hr>
+                <h2><code>cite</code></h2>
+                <p>Here is where I found this <cite>CITE a book</cite></p>
+                <hr>
+                <h2>figure and figcaption</h2>
+                <figure>
+                    <img src="http://placekitten.com/g/200/200">
+                    <figcaption>figcaption</figcaption>
+                </figure>
+                <hr>
+                <h2><code>dfn</code></h2>
+                <h3>should have italic font-style</h3>
+                <div>
+                    <dfn>dfn is a definition</dfn>
+                </div>
+                <hr>
+                <h2><code>var</code></h2> 
+                <p> A simple equation: <var>x</var> = <var>y</var> + 2 </p>
+                <hr>
+                <h2><code>kbd</code></h2>
+                <p>Save the document by pressing <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+                <hr>
+                <h2><code>output</code></h2>
+                <output name="result">60</output>
+                <hr>
+                <h2><code>h1</code></h2>
+                <h3>should not change size within an <code>article</code></h3>
+                <div>
+                    <h1>Heading (control)</h1>
+                    <article>
+                        <h1>Heading (in article)</h1>
+                    </article>
+                </div>
+                <h3>should not change size within a <code>section</code></h3>
+                <div>
+                    <h1>Heading (control)</h1>
+                    <section>
+                        <h1>Heading (in section)</h1>
+                    </section>
+                </div>
+                <hr>
+                <h2><code>mark</code></h2>
+                <h3>should have a highlighted background</h3>
+                <div>
+                    <mark>mark is for highlighting</mark>
+                </div>
+                <hr>
+                <h2><code>small</code></h2>
+                <h3>should render equally small in all browsers</h3>
+                <div>
+                    control text. <small>small text.</small>
+                </div>
+                <hr>
+                <h2><code>sub</code> and <code>sup</code></h2>
+                <h3>should not affect a line's visual line-height</h3>
+                <div>
+                    <p>control text.</p>
+                    <p>control text. <sub>sub text should be lower.</sub></p>
+                    <p>control text. <sup>sup text should be higher.</sup></p>
+                </div>
+                <hr>
+                <h2><code>code</code>, <code>kbd</code>, <code>pre</code>, <code>samp</code></h2>
+                <h3>should render text at the same absolute size as normal text</h3>
+                <div>
+                    <span>span: abcdefghijklmnopqrstuvwxyz.</span><br>
+                    <code>code: abcdefghijklmnopqrstuvwxyz.</code><br>
+                    <kbd>kbd: abcdefghijklmnopqrstuvwxyz.</kbd><br>
+                    <samp>samp: abcdefghijklmnopqrstuvwxyz.</samp>
+                    <pre>pre: abcdefghijklmnopqrstuvwxyz.</pre>
+                    <h3><code>code</code> wrapped in <code>pre</code></h3>
+                    <pre>
+                        <code>
+                        function beCool(you) {
+                            return `${you} already are`;
+                        };
+                        </code>
+                    </pre>
+                </div>
+                <hr>
+                <h2><code>input</code>, <code>optgroup</code>, <code>select</code>, <code>textarea</code></h2>
+                <div>
+                    <input value="input">
+                    <br>
+                    <select>
+                        <optgroup label="optgroup">
+                            <option>option group 1</option>
+                            <option>option group 2</option>
+                            <option>option group 3</option>
+                        </optgroup>
+                        <option>option a</option>
+                        <option>option b</option>
+                    </select>
+                    <br>
+                    <select>
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                    </select>
+                    <br>
+                    <textarea>textarea</textarea>
+                </div>
+                <hr>
+                <h2><code>img</code></h2>
+                <img src="http://placekitten.com/g/200/200" alt="" title="not in an anchor">
+                <h3>should not have a border when wrapped in an anchor</h3>
+                <a href="#non">
+                    <img src="http://fillmurray.com/200/200" title="in an anchor">
+                </a>
+                <hr>
+                <h2><code>svg</code></h2>
+                <h3>should not overflow (should be a cut off circle)</h3>
+                <div>
+                    <svg width="100px" height="100px">
+                        <circle cx="100" cy="100" r="100" fill="#ADD8E6" />
+                    </svg>
+                </div>
+                <hr>
+                <h2><code>buttons</code></h2>
+                <button>Non-Willow Button</button>
+                <button disabled>Non-Willow Disabled Button</button>
+                <button class="willow-button">neutral</button>
+                <button class="willow-button--primary">action</button>
+                <button class="willow-button--positive">positive</button>
+                <button class="willow-button--negative">negative</button>
+                <button class="willow-button" disabled>disabled</button>
+                <hr>
+                <h2><code>inputs</code></h2>
+                <div>
+                    <p><input type="button" value="input (btn w/out willow)"></p>
+                    <p><input class="willow-button" type="button" value="input (btn w/willow)"></p>
+                    <p><input type="file" value="input (file w/out willow)"></p>
+                    <p><input class="willow-button" type="file" value="input (file w/willow)"></p>
+                    <p><input type="reset" value="input (reset w/out willow)"></p>
+                    <p><input class="willow-button" type="reset" value="input (reset w/willow)"></p>
+                    <p><input type="submit" value="input (submit w/out willow)"></p>
+                    <p><input class="willow-button" type="submit" value="input (submit w/willow)"></p>
+                </div>
+                <hr>
+                <h2><code>textarea</code></h2>
+                <h3>should not have a scrollbar unless overflowing</h3>
+                <div>
+                    <textarea>textarea</textarea>
+                </div>
+                <hr>
+                <h2><code>[type="checkbox"]</code>, <code>[type="radio"]</code></h2>
+                <div>
+                    <input type="checkbox" id="check"><label for="check">Checkmate</label>
+                    <br>
+                    <input type="radio" name="radio-1" id="radio_1" value="1">
+                    <label for="radio_1">1</label>
+                    <input type="radio" name="radio-2" id="radio_2" value="2">
+                    <label for="radio_2">2</label>
+                </div>
+                <hr>
+                <h2><code>[type="number"]</code></h2>
+                <h3>should display a default cursor for the decrement button's click target in Chrome</h3>
+                <div>
+                    <input type="number" min="0" max="10" value="5">
+                </div>
+                <hr>
+                <h2><code>[type="search"]</code></h2>
+                <h3>plain</h3>
+                <div>
+                    <input type="search">
+                </div>
+                <h3>should not have a cancel button in Safari or Chrome</h3>
+                <div>
+                    <input type="search" value="search">
+                </div>
+                <h3>should reference inherited color</h3>
+                <div>
+                    <input type="text" placeholder="Text goes here">
+                </div>
+                <hr>
+                <h2><code>fieldset</code></h2>
+                <h3>should have consistent border, padding, and margin</h3>
+                <div>
+                    <fieldset>
+                        <div>here is some text for the fieldset</div>
+                    </fieldset>
+                </div>
+                <h2>with <code>legend</code></h2>
+                <div>
+                    <fieldset>
+                        <legend>legend</legend>
+                    </fieldset>
+                </div>
+                <h3>should wrap text</h3>
+                <div>
+                    <fieldset>
+                        <legend>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                            Cum sociis natoque penatibus et me.</legend>
+                    </fieldset>
+                </div>
+                <hr>
+                <h2>audio</h2>
+                <audio controls>audio</audio>
+                <hr>
+                <h2>canvas</h2>
+                <canvas>canvas</canvas>
+                <hr>
+                <h2>progress</h2>
+                <progress>progress</progress>
+                <hr>
+                <h2>video</h2>
+                <video controls src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm" type="video/webm">video</video>
+                <hr>
+            </div>
+        </main>
+
+        <!-- Page Footer Component -->
+        <footer class="willow-page-footer" role="contentinfo">
+            <div class="willow-page-footer__branding">
+                <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="images/logos/colonial-life/logo-one-color.svg" alt=""></a>
+            </div>
+            <div class="willow-page-footer__navigation">
+                <nav class="willow-footer-nav" role="navigation" aria-label="Footer Navigation">
+                    <!-- Heading Text Hidden by Default - Required for Accessibility-->
+                    <h1 class="willow-footer-nav__heading">Footer Navigation</h1>
+                    <ul class="willow-footer-nav__list">
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 1</a></li>
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 2</a></li>
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 3</a></li>
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 4</a></li>
+                        <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 5</a></li>
                     </ul>
                 </nav>
             </div>
-        </div>
-        <div class="willow-page-header__site-context">
-            <nav class="willow-breadcrumbs" role="navigation" aria-label="Breadcrumb Navigation">
-                <!-- Heading Text Hidden by Default - Required for Accessibility-->
-                <h1 class="willow-breadcrumbs__heading">You are here:</h1>
-                <ol class="willow-breadcrumbs__list">
-                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 1</a></li>
-                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 2</a></li>
-                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 3</a></li>
-                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 4</a></li>
-                    <li class="willow-breadcrumbs__item"><a class="willow-breadcrumbs__link" href="" aria-label="">Crumb Item 5</a></li>
-                    <li class="willow-breadcrumbs__item--active">Current Item</li>
-                </ol>
-            </nav>
-        </div>
-    </header>
-
-    <main class="willow-page-content" id="main" role="main">
-        <!-- Styling Context Component -->
-        <div class="willow-styling-context">
-            <h1>Base Elements:tests</h1>
-            <hr>
-            <h2>Headings</h2>
-            <div>
-                <h1>Heading 1</h1>
-                <h2>Heading 2</h2>
-                <h3>Heading 3</h3>
-                <h4>Heading 4</h4>
-                <h5>Heading 5</h5>
-                <h6>Heading 6</h6>
-            </div>
-            <hr>
-            <h2>header</h2>
-            <header>header text</header>
-            <hr>
-            <h2>main</h2>
-            <main>main text</main>
-            <hr>
-            <h2>footer</h2>
-            <footer>footer text</footer>
-            <hr>
-            <h2>lists</h2>
-            <ul>
-                <li><a href="#">link-1</a></li>
-                <li><a href="#">link-2</a></li>
-                <li><a href="#">link-3</a></li>
-                <li><a href="#">link-4</a></li>
-                <li><a href="#">link-5</a></li>
-                <li><a href="#">link-6</a></li>
-                <li><a href="#">link-7</a></li>
-                <li><a href="#">link-8</a></li>
-                <li><a href="#">link-9</a></li>
-                <li><a href="#">link-10</a></li>
-            </ul>
-            <ol>
-                <li>list item 1</li>
-                <li>list item 2</li>
-                <li>list item 3</li>
-                <li>list item 4</li>
-                <li>list item 5</li>
-            </ol>
-            <hr>
-            <h2>nav</h2>
-            <nav>nav text</nav>
-            <hr>
-            <h2>section</h2>
-            <section>section text</section>
-            <hr>
-            <h2>article</h2>
-            <article>article text</article>
-            <hr>
-            <h2>aside</h2>
-            <aside>aside text</aside>
-            <hr>
-            <h2><code>summary</code> with <code>details</code></h2>
-            <details>
-                <summary>summary text</summary>
-                details text
-            </details>
-            <hr>
-            <h2><code>a</code></h2>
-            <a href="#">dummy anchor</a>
-            <hr>
-            <h2><code>b</code>, <code>strong</code></h2>
-            <h3>should have bolder font-weight</h3>
-            <div>
-                <b>b is for bold</b>
-                <br>
-                <strong>strong is for strong</strong>
-            </div>
-            <hr>
-            <h2><code>i</code>, <code>em</code></h2>
-            <div>
-                <i>italicized words here</i>
-                <br>
-                <em>emphasized words here</em>
-            </div>
-            <hr>
-            <h2><code>abbr[title]</code></h2>
-            <abbr title="abbreviation">abbr</abbr>
-            <hr>
-            <h2><code>s</code> and <code>delete</code></h2>
-            <s>strikethrough on text</s>
-            <br>
-            <del>deleted text should be deleted,</del>
-            <hr>
-            <h2><code>ins</code></h2>
-            <ins>insert text here</ins>
-            <hr>
-            <h2><code>time</code></h2>
-            <time>20:00</time>
-            <hr>
-            <h2><code>blockquote</code></h2>
-            <p>This is an important quote from someone:<blockquote>BLOCKQUOTE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas cupiditate, molestiae voluptatem, eligendi optio.</blockquote></p>
-            <hr>
-            <h2><code>q</code></h2>
-            <p>Lorem ipsum dolor sit amet, <q>QUOTE culpa dolores in consectetur ipsam</q> accusantium quis ut quam eveniet.</p>
-            <hr>
-            <h2><code>cite</code></h2>
-            <p>Here is where I found this <cite>CITE a book</cite></p>
-            <hr>
-            <h2>figure and figcaption</h2>
-            <figure>
-                <img src="http://placekitten.com/g/200/200">
-                <figcaption>figcaption</figcaption>
-            </figure>
-            <hr>
-            <h2><code>dfn</code></h2>
-            <h3>should have italic font-style</h3>
-            <div>
-                <dfn>dfn is a definition</dfn>
-            </div>
-            <hr>
-            <h2><code>var</code></h2> 
-            <p> A simple equation: <var>x</var> = <var>y</var> + 2 </p>
-            <hr>
-            <h2><code>kbd</code></h2>
-            <p>Save the document by pressing <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
-            <hr>
-            <h2><code>output</code></h2>
-            <output name="result">60</output>
-            <hr>
-            <h2><code>h1</code></h2>
-            <h3>should not change size within an <code>article</code></h3>
-            <div>
-                <h1>Heading (control)</h1>
-                <article>
-                    <h1>Heading (in article)</h1>
-                </article>
-            </div>
-            <h3>should not change size within a <code>section</code></h3>
-            <div>
-                <h1>Heading (control)</h1>
-                <section>
-                    <h1>Heading (in section)</h1>
-                </section>
-            </div>
-            <hr>
-            <h2><code>mark</code></h2>
-            <h3>should have a highlighted background</h3>
-            <div>
-                <mark>mark is for highlighting</mark>
-            </div>
-            <hr>
-            <h2><code>small</code></h2>
-            <h3>should render equally small in all browsers</h3>
-            <div>
-                control text. <small>small text.</small>
-            </div>
-            <hr>
-            <h2><code>sub</code> and <code>sup</code></h2>
-            <h3>should not affect a line's visual line-height</h3>
-            <div>
-                <p>control text.</p>
-                <p>control text. <sub>sub text should be lower.</sub></p>
-                <p>control text. <sup>sup text should be higher.</sup></p>
-            </div>
-            <hr>
-            <h2><code>code</code>, <code>kbd</code>, <code>pre</code>, <code>samp</code></h2>
-            <h3>should render text at the same absolute size as normal text</h3>
-            <div>
-                <span>span: abcdefghijklmnopqrstuvwxyz.</span><br>
-                <code>code: abcdefghijklmnopqrstuvwxyz.</code><br>
-                <kbd>kbd: abcdefghijklmnopqrstuvwxyz.</kbd><br>
-                <samp>samp: abcdefghijklmnopqrstuvwxyz.</samp>
-                <pre>pre: abcdefghijklmnopqrstuvwxyz.</pre>
-                <h3><code>code</code> wrapped in <code>pre</code></h3>
-                <pre>
-                    <code>
-                    function beCool(you) {
-                        return `${you} already are`;
-                    };
-                    </code>
-                </pre>
-            </div>
-            <hr>
-            <h2><code>input</code>, <code>optgroup</code>, <code>select</code>, <code>textarea</code></h2>
-            <div>
-                <input value="input">
-                <br>
-                <select>
-                    <optgroup label="optgroup">
-                        <option>option group 1</option>
-                        <option>option group 2</option>
-                        <option>option group 3</option>
-                    </optgroup>
-                    <option>option a</option>
-                    <option>option b</option>
-                </select>
-                <br>
-                <select>
-                    <option>option 1</option>
-                    <option>option 2</option>
-                    <option>option 3</option>
-                </select>
-                <br>
-                <textarea>textarea</textarea>
-            </div>
-            <hr>
-            <h2><code>img</code></h2>
-            <img src="http://placekitten.com/g/200/200" alt="" title="not in an anchor">
-            <h3>should not have a border when wrapped in an anchor</h3>
-            <a href="#non">
-                <img src="http://fillmurray.com/200/200" title="in an anchor">
-            </a>
-            <hr>
-            <h2><code>svg</code></h2>
-            <h3>should not overflow (should be a cut off circle)</h3>
-            <div>
-                <svg width="100px" height="100px">
-                    <circle cx="100" cy="100" r="100" fill="#ADD8E6" />
-                </svg>
-            </div>
-            <hr>
-            <h2><code>buttons</code></h2>
-            <button>Non-Willow Button</button>
-            <button disabled>Non-Willow Disabled Button</button>
-            <button class="willow-button">neutral</button>
-            <button class="willow-button--primary">action</button>
-            <button class="willow-button--positive">positive</button>
-            <button class="willow-button--negative">negative</button>
-            <button class="willow-button" disabled>disabled</button>
-            <hr>
-            <h2><code>inputs</code></h2>
-            <div>
-                <p><input type="button" value="input (btn w/out willow)"></p>
-                <p><input class="willow-button" type="button" value="input (btn w/willow)"></p>
-                <p><input type="file" value="input (file w/out willow)"></p>
-                <p><input class="willow-button" type="file" value="input (file w/willow)"></p>
-                <p><input type="reset" value="input (reset w/out willow)"></p>
-                <p><input class="willow-button" type="reset" value="input (reset w/willow)"></p>
-                <p><input type="submit" value="input (submit w/out willow)"></p>
-                <p><input class="willow-button" type="submit" value="input (submit w/willow)"></p>
-            </div>
-            <hr>
-            <h2><code>textarea</code></h2>
-            <h3>should not have a scrollbar unless overflowing</h3>
-            <div>
-                <textarea>textarea</textarea>
-            </div>
-            <hr>
-            <h2><code>[type="checkbox"]</code>, <code>[type="radio"]</code></h2>
-            <div>
-                <input type="checkbox" id="check"><label for="check">Checkmate</label>
-                <br>
-                <input type="radio" name="radio-1" id="radio_1" value="1">
-                <label for="radio_1">1</label>
-                <input type="radio" name="radio-2" id="radio_2" value="2">
-                <label for="radio_2">2</label>
-            </div>
-            <hr>
-            <h2><code>[type="number"]</code></h2>
-            <h3>should display a default cursor for the decrement button's click target in Chrome</h3>
-            <div>
-                <input type="number" min="0" max="10" value="5">
-            </div>
-            <hr>
-            <h2><code>[type="search"]</code></h2>
-            <h3>plain</h3>
-            <div>
-                <input type="search">
-            </div>
-            <h3>should not have a cancel button in Safari or Chrome</h3>
-            <div>
-                <input type="search" value="search">
-            </div>
-            <h3>should reference inherited color</h3>
-            <div>
-                <input type="text" placeholder="Text goes here">
-            </div>
-            <hr>
-            <h2><code>fieldset</code></h2>
-            <h3>should have consistent border, padding, and margin</h3>
-            <div>
-                <fieldset>
-                    <div>here is some text for the fieldset</div>
-                </fieldset>
-            </div>
-            <h2>with <code>legend</code></h2>
-            <div>
-                <fieldset>
-                    <legend>legend</legend>
-                </fieldset>
-            </div>
-            <h3>should wrap text</h3>
-            <div>
-                <fieldset>
-                    <legend>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                        Cum sociis natoque penatibus et me.</legend>
-                </fieldset>
-            </div>
-            <hr>
-            <h2>audio</h2>
-            <audio controls>audio</audio>
-            <hr>
-            <h2>canvas</h2>
-            <canvas>canvas</canvas>
-            <hr>
-            <h2>progress</h2>
-            <progress>progress</progress>
-            <hr>
-            <h2>video</h2>
-            <video controls src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm" type="video/webm">video</video>
-            <hr>
-        </div>
-    </main>
-
-    <!-- Page Footer Component -->
-    <footer class="willow-page-footer" role="contentinfo">
-        <div class="willow-page-footer__branding">
-            <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="images/logos/colonial-life/logo-one-color.svg" alt=""></a>
-        </div>
-        <div class="willow-page-footer__navigation">
-            <nav class="willow-footer-nav" role="navigation" aria-label="Footer Navigation">
-                <!-- Heading Text Hidden by Default - Required for Accessibility-->
-                <h1 class="willow-footer-nav__heading">Footer Navigation</h1>
-                <ul class="willow-footer-nav__list">
-                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 1</a></li>
-                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 2</a></li>
-                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 3</a></li>
-                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 4</a></li>
-                    <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="" aria-label="">Menu Item 5</a></li>
-                </ul>
-            </nav>
-        </div>
-        <small class="willow-page-footer__copyright">© 2017 Colonial Life & Accident Insurance Company Colonial Life & Accident Insurance Company is a subsidiary of Unum Group.</small>
-    </footer>
+            <small class="willow-page-footer__copyright">© 2017 Colonial Life & Accident Insurance Company Colonial Life & Accident Insurance Company is a subsidiary of Unum Group.</small>
+        </footer>
+    </div>
     <script src="scripts/site.min.js"></script>
     <script>
         var header = document.querySelector(".willow-page-header");
