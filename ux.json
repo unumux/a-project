@@ -5,8 +5,8 @@
             "node_modules/@unumux/components/_*.scss",
             "node_modules/@unumux/components/@(components|base-elements|utilities)/_*.scss",
             "node_modules/@unumux/components/@(components|base-elements|utilities)/**/_*.scss",
-            "node_modules/@unumux/theme-enterprise-default/_*.scss",            
-            "node_modules/@unumux/theme-enterprise-default/**/_*.scss"
+            "node_modules/@unumux/@(theme-enterprise-default|theme-unum-default|theme-coloniallife-default)/_*.scss",            
+            "node_modules/@unumux/@(theme-enterprise-default|theme-unum-default|theme-coloniallife-default)/**/_*.scss"
         ],
         "dest": "styles"
     },
