@@ -21,22 +21,24 @@
             </div>
         </section>
 
-        <!-- Skip Navigation Component -->
+        <!-- SKIP NAV COMPONENT -->
         <div class="willow-skip-nav">
             <a href="#main" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
         </div>
 
-        <!-- Page Header Component -->
+        <!-- PAGE HEADER COMPONENT -->
         <header class="willow-page-header" role="banner">
             <div class="willow-page-header__branding">
+                <!-- LOGO LINK COMPONENT -->
                 <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="images/logos/unum/logo_unum_reverse.svg" alt=""></a>
             </div>
             <div class="willow-page-header__content-controls">
-                <a href="#" class="willow-page-header__content-open">menu<span class="willow-icon--menu"></span></a>
-                <a href="#" class="willow-page-header__content-close">close<span class="willow-icon--menu-close"></span></a>
+                <a href="#" class="willow-page-header__content-open">Menu<span class="willow-icon--menu"></span></a>
+                <a href="#" class="willow-page-header__content-close">Close<span class="willow-icon--menu-close"></span></a>
             </div>
             <div class="willow-page-header__content">
                 <div class="willow-page-header__navigation">
+                    <!-- PRIMARY NAV COMPONENT -->
                     <nav class="willow-primary-nav" role="navigation" aria-label="Primary Navigation">
                         <!-- Heading Text Hidden by Default - Required for Accessibility-->
                         <h1 class="willow-primary-nav__heading">Primary Navigation</h1>
@@ -49,6 +51,7 @@
                 </div>
             </div>
             <div class="willow-page-header__site-context">
+                <!-- BREADCRUMB COMPONENT -->
                 <nav class="willow-breadcrumbs" role="navigation" aria-label="Breadcrumb Navigation">
                     <!-- Heading Text Hidden by Default - Required for Accessibility-->
                     <h1 class="willow-breadcrumbs__heading">You are here:</h1>
@@ -64,7 +67,9 @@
             </div>
         </header>
 
+        <!-- PAGE CONTENT COMPONENT -->
         <main class="willow-page-content" id="main" role="main">
+            <!-- BANNER COMPONENT -->
             <section class="willow-banner" role="region">
                 <h1 class="willow-banner__heading">Banner Heading</h1>
                 <div class="willow-banner__content">
@@ -76,8 +81,35 @@
                     <li class="banner__action"><button class="willow-button--primary">Call To Action</button></li>
                 </ul>
             </section>
+            <!-- SECONDARY NAV COMPONENT -->
+            <nav class="willow-secondary-nav" role="navigation" aria-label="Secondary Navigation">
+                <!-- Heading Text Hidden by Default - Required for Accessibility-->
+                <h1 class="willow-secondary-nav__heading">Secondary Navigation</h1>
+                <ul class="willow-secondary-nav__list">
+                    <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="" aria-label="">Side Menu Item 1</a></li>
+                    <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="" aria-label="">Side Menu Item 2</a></li>
+                    <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="" aria-label="">Side Menu Item 3</a></li>
+                </ul>
+            </nav>
+            <!-- STYLING CONTEXT COMPONENT -->
+            <div class="willow-styling-context">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga maiores quo impedit distinctio officia sint, tempora qui nesciunt, voluptatem sequi natus necessitatibus placeat consequuntur voluptatibus illo quos dignissimos nisi eligendi repellat. Quas et voluptate possimus eaque facere! Sit dolorem fuga rem similique facilis reprehenderit at harum sed voluptates, assumenda velit cum, doloremque eaque, pariatur ab corporis veritatis commodi. Asperiores accusamus, magni reiciendis omnis pariatur earum deserunt natus architecto a impedit, nihil enim ratione accusantium aliquid animi possimus. Quisquam error voluptas voluptatum, numquam laudantium, quas debitis beatae omnis magnam sit quasi similique alias velit at. Ab assumenda delectus ullam eveniet ipsa nostrum quam ex deserunt atque debitis odio, ipsum laudantium voluptatum dignissimos facere nam veritatis reiciendis vero, dolor ad recusandae quis dolorem ratione possimus exercitationem! Qui blanditiis accusantium, tempora molestias ut illo, minima dolor. Recusandae dolorem voluptatibus cumque veniam doloremque, saepe laudantium minima, labore, soluta velit officia necessitatibus. Illo tempore delectus recusandae corporis commodi blanditiis omnis quae earum est! Omnis ipsam praesentium in vel quo aliquam consequatur iure ipsum necessitatibus, illum dignissimos voluptatibus aut, impedit temporibus officiis maiores sunt, cupiditate magnam. Omnis sint, iusto libero debitis, illum similique ea, amet nesciunt voluptatem fugiat recusandae magnam itaque? Neque aperiam eveniet, numquam commodi?</p>
+            </div>
+            
+            <!-- INLINE ALERT COMPONENT (IN PAGE CONTENT) -->
+            <section class="willow-alert--negative" role="alert">
+                <h1 class="willow-alert__heading">Form Alert</h1>
+                <div class="willow-alert__content">
+                    <div class="willow-styling-context">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </section>
 
+            <!-- BUTTON COMPONENT -->
             <button class="willow-button" onclick="openDialog()">Show Dialog</button>
+            
+            <!-- DIALOG COMPONENT -->
             <section class="willow-dialog" role="dialog">
                 <div class="willow-dialog__container">
                     <h1 class="willow-dialog__heading">Heading Text</h1>
@@ -85,7 +117,8 @@
                         <div class="willow-styling-context">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dignissimos doloremque aliquam quidem maxime voluptates porro quos ex dolor aperiam ab laboriosam error, expedita, quia eaque, iure assumenda nemo fugiat.</p>
                         </div>
-                        <section class="willow-alert--negative" role="alert">
+                        <!-- INLINE ALERT COMPONENT (IN DIALOG) -->
+                        <section class="willow-alert--positive" role="alert">
                             <h1 class="willow-alert__heading">Heading Text</h1>
                             <div class="willow-alert__content">
                                 <div class="willow-styling-context">
@@ -101,7 +134,10 @@
                </div>
             </section>
 
+            <!-- BUTTON COMPONENT -->
             <button class="willow-button" onclick="openModal()">Show Modal</button>
+
+            <!-- MODAL COMPONENT -->
             <section class="willow-modal" role="alertdialog">
                 <div class="willow-modal__container">
                     <h1 class="willow-modal__heading">Modal</h1>
@@ -109,7 +145,8 @@
                         <div class="willow-styling-context">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dignissimos doloremque aliquam quidem maxime voluptates porro quos ex dolor aperiam ab laboriosam error, expedita, quia eaque, iure assumenda nemo fugiat.</p>
                         </div>
-                        <section class="willow-alert--negative" role="alert">
+                        <!-- INLINE ALERT COMPONENT (IN MODAL) -->
+                        <section class="willow-alert" role="alert">
                             <h1 class="willow-alert__heading">Heading Text</h1>
                             <div class="willow-alert__content">
                                 <div class="willow-styling-context">
@@ -124,6 +161,7 @@
                 </div>
             </section>
 
+            <!-- GRID COMPONENT (IN PAGE CONTENT) -->
             <div class="willow-grid">
                 <div class="willow-grid__item">
                     <div class="willow-styling-context">
@@ -151,9 +189,11 @@
                 </div>
             </div>
 
+            <!-- SUMMARY COMPONENT (WITH GRID) -->
             <section class="willow-summary" role="region">
                 <h1 class="willow-summary__heading">Summary Heading</h1>
                 <div class="willow-summary__content">
+                    <!-- GRID COMPONENT (IN SUMMARY) -->
                     <div class="willow-grid">
                         <div class="willow-grid__item">
                             <div class="willow-styling-context">
@@ -176,17 +216,32 @@
                     </div>
                 </div>
                 <ul class="willow-summary__actions">
-                    <li class="willow-summary__action"><a href="#">More Articles</a></li>
+                    <li class="willow-summary__action"><button class="willow-button--primary">more articles</button></li>
+                </ul>
+            </section>
+
+            <!-- SUMMARY COMPONENT -->
+             <section class="willow-summary" role="region">
+                <h1 class="willow-summary__heading">Summary Heading</h1>
+                <div class="willow-summary__content">
+                    <div class="willow-styling-context">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolor saepe reiciendis quae, labore, cumque quis. Doloremque sunt dolore sapiente quia adipisci iste rerum fugiat sed reiciendis non maxime accusamus illo repellat voluptatibus, autem nisi, laborum alias? Ipsa architecto blanditiis, explicabo voluptate eaque unde veniam reprehenderit laborum, eum sunt itaque veritatis nisi eius aliquam rerum laudantium similique velit repellendus labore exercitationem esse corporis. Rerum, reprehenderit ex magni at, perspiciatis impedit ullam eligendi amet perferendis fugit aperiam ea animi quos sapiente neque porro voluptate delectus quisquam incidunt odio officiis blanditiis facilis. Nam, saepe, minima. Esse quod, numquam odio impedit distinctio hic!</p>
+                    </div>
+                </div>
+                <ul class="willow-summary__actions">
+                    <li class="willow-summary__action"><button class="willow-button">more articles</button></li>
                 </ul>
             </section>
         </main>
 
-        <!-- Page Footer Component -->
+        <!-- PAGE FOOTER COMPONENT -->
         <footer class="willow-page-footer" role="contentinfo">
             <div class="willow-page-footer__branding">
+                <!-- LOGO LINK COMPONENT -->
                 <a class="willow-logo-link" href="/" aria-label="go to home page"><img class="willow-logo-link__image" src="images/logos/unum/logo_unum_reverse.svg" alt=""></a>
             </div>
             <div class="willow-page-footer__navigation">
+                <!-- FOOTER NAVIGATION COMPONENT -->
                 <nav class="willow-footer-nav" role="navigation" aria-label="Footer Navigation">
                     <!-- Heading Text Hidden by Default - Required for Accessibility-->
                     <h1 class="willow-footer-nav__heading">Footer Navigation</h1>
