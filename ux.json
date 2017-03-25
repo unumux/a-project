@@ -17,7 +17,8 @@
     },
     "watch": [
         "index.html",
-        "components.html"
+        "components.html",
+        "content.html"
     ],
     "server": true,
     "compileJs": true,
